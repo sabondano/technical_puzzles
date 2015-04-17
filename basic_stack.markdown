@@ -29,3 +29,7 @@ methods on Array:
 
 And, for an added challenge, can you do it without using
 negative array indexes?
+
+## Solutions
+
+* [Video walk-through](https://vimeo.com/125297304)
