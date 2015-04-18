@@ -41,37 +41,3 @@ Examples:
   s: 1
   e: 1
 ```
-
-### Iteration 1
-```ruby
-def analyze(string_input)
-  array = string_input.chars.uniq.sort_by do |letter|
-    string_input.count(letter)
-  end
-
-  array.reverse.each do |letter|
-    puts "#{letter}: #{string_input.count(letter)}"
-  end
-end
-
-puts "Please enter a string to analyze: "
-command = gets.strip
-analyze(command)
-```
-The interviewer asked if I could reduce the Big O complexity of this algorithm by only using one loop.
-
-### Iteration 2
-```ruby
-def analyze(string_input)
-  count_hash = string_input.chars.uniq.each_with_object({}) do |letter, hash|
-    hash["#{letter}: "] = string_input.count(letter)
-  end
-
-  puts count_hash.sort_by { |k,v| -v }
-end
-
-puts "Please enter a string to analyze: "
-command = gets.strip
-analyze(command)
-```
-The ```sort_by``` method call in iteration 2 still feels like a loop and the formatting is incorrect.
