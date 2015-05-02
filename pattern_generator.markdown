@@ -7,3 +7,8 @@ Write a program which, given a pattern like `XXNXN`, can both:
 
 * generate all possible serial numbers for that pattern
 * report out how many numbers were generated.
+
+## Extensions
+
+* Can you also support patterns of any length?
+* Customers often confuse `0` and `O`, `I` and `1`. Let's omit all four of those symbols from the generator.
