@@ -4,11 +4,11 @@ Write a console application that outputs the results of the following analysis o
 
 For each unique character that appears in the input string, report the number of occurrences of that character in the input.  Report each character on its own line, in descending order based on the number of occurrences.  Each line should be formatted as follows:
 
+```
 <character>: <number of occurrences>
+```
 
 There is no defined order for reporting characters that have the same number of occurrences.  Such entries can appear in any order of your choosing in the output.
-
-The solution to this problem can be written in the programming language of your choosing.  If, for some reason, you happen to choose a language that does not support the creation of command-line applications, then you can instead write a function in that language that takes a string as input and returns a string meeting the requirements of the problem.
 
 Examples:
 
