@@ -9,3 +9,9 @@ the closing brace comes in the opposite order of the opening.
 * Invalid "({12)}"
 
 Write a validator that can determine the well-formed-ness of an input string.
+
+
+Extension:
+
+* Could we provide the list of match-pairs dynamically? Adjust yor program to
+  take an array of start/end match pairs as input. For example: `well_formed?("({})", [["(",")"],["{","}"]])`
