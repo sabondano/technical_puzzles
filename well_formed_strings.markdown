@@ -13,5 +13,5 @@ Write a validator that can determine the well-formed-ness of an input string.
 
 Extension:
 
-* Could we provide the list of match-pairs dynamically? Adjust yor program to
+* Could we provide the list of match-pairs dynamically? Adjust your program to
   take an array of start/end match pairs as input. For example: `well_formed?("({})", [["(",")"],["{","}"]])`
